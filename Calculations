@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+    int num1, num2, num;
+    char oper;
+
+    printf("Enter num1 and num2:\n");
+    scanf("%d %d", &num1, &num2);
+
+    printf("Enter Operator ('+', '-', '*', '/'): ");
+    scanf(" %c", &oper);
+    
+    if (oper == '+'){
+        printf("%d + %d = %d",num1,num2,num1+num2);
+    }else if(oper == '-'){
+        num = num1 - num2;
+        printf("%d - %d = %d ",num1,num2,num);
+    }else if(oper == '*'){
+        num = num1 * num2;
+        printf("%d * %d = %d ", num1, num2, num);
+    }else if(oper == '%'){
+        num = num1 % num2;
+        printf("%d / %d = %d ",num1, num2, num);
+    }else{
+        printf("Invalid Number");
+    }
+    
+}
